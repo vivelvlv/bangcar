@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bangCar.iml" filepath="$PROJECT_DIR$/bangCar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bangcar.iml" filepath="$PROJECT_DIR$/bangcar.iml" />
     </modules>
   </component>
 </project>

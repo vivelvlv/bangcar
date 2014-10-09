@@ -1,6 +1,7 @@
 package com.bangcar.app.activity;
 
 import android.view.View;
+import com.bangcar.app.R;
 
 /**
  * Created by vive on 2014/10/8.
@@ -8,7 +9,7 @@ import android.view.View;
 public class LoginActivity extends BaseActivity {
     @Override
     protected void setLayout() {
-
+        setContentView(R.layout.activity_login);
     }
 
     @Override

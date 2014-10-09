@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/light_black" android:state_focused="false" android:state_pressed="false"/>
+    <item android:color="@color/commit_on" android:state_pressed="true"/>
+    <item android:color="@color/commit_on" android:state_focused="true"/>
+
+</selector>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="login_bg">#F6F6F6</color>
+    <color name="et_hint_color">#919191</color>
+    <color name="et_text_color">#3B3B3B</color>
+    <color name="et_cursor_color">#5f81f3</color>
+    <color name="register_bg">#F6F6F6</color>
+    <color name="product_list_bg">#E8E8E8</color>
+    <color name="divider_color">#DCDCDC</color>
+    <color name="light_black">#3B3B3B</color>
+    <color name="light_blue">#3476c0</color>
+    <color name="list_pname_color">#1e1e1e</color>
+    <color name="circle_red">#be3636</color>
+    <color name="post_divider">#dcdcdc</color>
+    <color name="light_grey">#8b8b8b</color>
+    <color name="post_send_color">#5ea5d7</color>
+    <color name="nav_normal_blue">#24253f</color>
+    <color name="nav_divider">#33385d</color>
+    <color name="gesture_path_color">#A63B30</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="text_red_color">#f05141</color>
+    <color name="login_btn_normal_color">#f05141</color>
+    <color name="login_btn_on_color">#c04134</color>
+    <color name="list_item_bg_on">#F6F6F6</color>
+    <color name="product_rate_color">#f05141</color>
+    <color name="product_sub_title_color">#909090</color>
+    <color name="product_time_color">#f2b084</color>
+    <color name="workmate_name_color">#a8a8a8</color>
+    <color name="order_info_color">#111111</color>
+    <color name="sub_title_color">#919191</color>
+    <color name="back_color_on">#cccccc</color>
+    <color name="companylist_focused">#A7D7FF</color>
+    <color name="title_color">#FFFFFF</color>
+    <color name="title_bg">#f05141</color>
+    <color name="commit_on">#CC000000</color>
+    <color name="dark_bg">#DCDCDC</color>
+    <color name="orange">#FF7200</color>
+    <color name="transpant">#00FFFFFF</color>
+    <color name="normal_name_color">#969696</color>
+
+    <drawable name="nav_text_color">#969696</drawable>
+    <drawable name="nav_text_on_color">#3068B3</drawable>
+
+    <color name="text_focuse_color">#3068B3</color>
+
+    <drawable name="grey">#e6e6e6</drawable>
+
+    <color name="menu_divider">#717374</color>
+    <color name="menu_item_normal">#3a3c3e</color>
+    <color name="menu_item_on">#4e5051</color>
+    <color name="holo_red_light">#ffff4488</color>
+    <color name="product_detail_html_pressed_color">#F6F6F6</color>
+    <color name="product_detail_choosed_color">#f05141</color>
+    <color name="product_detail_unchoosed_color">#3b3b3b</color>
+    <color name="product_detail_base_info_textnamecolor">#777777</color>
+    <color name="product_detail_base_info_textvaluecolor">#3b3b3b</color>
+    <color name="register_red">#f05141</color>
+    <color name="reg_btn_red_normal">#f05141</color>
+    <color name="reg_btn_red_pressing">#b4453a</color>
+    <color name="reg_btn_gray_normal">#8d9fa6</color>
+    <color name="reg_btn_gray_pressing">#6f7b80</color>
+    <color name="menu_choose">#f05141</color>
+    <color name="menu_unchoose">#929292</color>
+
+    <color name="detail_menu_choose">#f05141</color>
+    <color name="detail_menu_unchoose">#9a9a9a</color>
+
+</resources>
