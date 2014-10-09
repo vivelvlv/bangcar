@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="android-support-v4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../YgbClient/libs/libthrift-0.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../YgbClient/libs/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../YgbClient/libs/slf4j-api-1.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../YgbClient/libs/slf4j-log4j12-1.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../YgbClient/libs/universal-image-loader-1.9.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
