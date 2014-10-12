@@ -1,8 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">帮淘车</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="register_notice">注册归vive所有</string>
+    <string name="my_invest">我的记录</string>
+    <string name="register_notice">注册帐号请登录网页版\nwww.yuangongbao.com</string>
+    
+    <string name="loading_data">努力加载中...</string>
+    <string name="system_exception">请求异常</string>
+    <string name="login_success">登录成功</string>
+    <string name="mobile_empty">手机号不能为空</string>
+    <string name="pwd_empty">密码不能为空</string>
+    <string name="logining">正在登录...</string>
+    <string name="verify_empty">验证码不能为空</string>
+    <string name="mobile_error">请输入正确的手机号码</string>
+    <string name="find_gesture_pass">找回手势密码</string>
+    <string name="pay">支付验证</string>
+    <string name="pay_success">支付完成</string>
+    <string name="history_invest">历史投资记录</string>
+    <string name="order_detail">订单详情</string>
+    
+    <string name="pull_to_refresh_pull_label">下拉可以刷新...</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新...</string>
+    <string name="pull_to_refresh_formatdate">更新于：MM-dd HH:mm</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_recording_intro_header">"请绘制手势密码，防止他人未经授权查看"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重新绘制"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="no_retry_time">您已连续5次输错，手势解锁已关闭，请重新登录</string>
 
+    <string-array name="planets_arry">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Neptune1</item>
+        <item>Neptune2</item>
+        <item>Neptune3</item>
+        <item>Neptune4</item>
+        <item>Neptune5</item>
+        <item>Neptune6</item>
+        <item>Neptune7</item>
+        <item>Neptune8</item>
+        <item>Neptune9</item>
+        <item>Neptune10</item>
+
+    </string-array>
 </resources>
