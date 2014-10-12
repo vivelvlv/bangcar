@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/register_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title" >
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/dividerBegin"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/accountSafeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dividerBegin" 
+                android:background="@drawable/settings_btn_selector">
+
+                <TextView
+                    android:id="@+id/accountSafeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="账户安全"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/accountSafeDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/accountSafeLayout"
+                android:layout_marginLeft="15dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/checkUpdateLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/accountSafeDivider" 
+                android:background="@drawable/settings_btn_selector">
+
+                <TextView
+                    android:id="@+id/checkTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="检查更新"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/versionTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/versionIv"
+                    android:gravity="center"
+                    android:text="V1.0.0"
+                    android:textColor="#C1C1C1"
+                    android:textSize="16sp" />
+                
+                 <ImageView
+                     android:id="@+id/versionIv"
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/updateDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/checkUpdateLayout"
+                android:layout_marginLeft="15dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/gradeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/updateDivider" 
+                android:background="@drawable/settings_btn_selector">
+
+                <TextView
+                    android:id="@+id/gradeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="应用评分"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/gradeDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/gradeLayout"
+                android:layout_marginLeft="15dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/helpLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/gradeDivider" 
+                android:background="@drawable/settings_btn_selector">
+
+                <TextView
+                    android:id="@+id/helpTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="帮助中心"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/helpDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/helpLayout"
+                android:layout_marginLeft="15dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/telLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/helpDivider" 
+                android:background="@drawable/settings_btn_selector">
+
+                <TextView
+                    android:id="@+id/telTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="客服热线"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+            
+             <TextView
+                android:id="@+id/telDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/telLayout"
+                android:layout_marginLeft="15dp"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/aboutLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/telDivider" 
+                android:background="@drawable/settings_btn_selector">
+
+                <TextView
+                    android:id="@+id/aboutTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="关于我们"
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/dividerEnd"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/aboutLayout"
+                android:background="@color/divider_color" />
+
+            <Button
+                android:id="@+id/signOutButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dividerEnd"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/reg_btn_red_selector"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

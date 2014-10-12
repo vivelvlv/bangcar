@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/register_bg" >
+
+    <include
+            android:id="@+id/titleLayout"
+            layout="@layout/layout_title" />
+
+    <WebView android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_below="@+id/titleLayout"
+             android:id="@+id/webView"
+            >
+
+    </WebView>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="帮助中心"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/dividerBegin"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/accountSettingLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/dividerBegin"
+            android:background="@drawable/settings_btn_selector" >
+
+            <TextView
+                android:id="@+id/accountSettingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="账户设置"
+                android:textColor="@color/light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/accountSettingDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/accountSettingLayout"
+            android:layout_marginLeft="15dp"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/buyAndPayLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/accountSettingDivider"
+            android:background="@drawable/settings_btn_selector" >
+
+            <TextView
+                android:id="@+id/buyAndPayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="购买支付"
+                android:textColor="@color/light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/buyAndPayDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/buyAndPayLayout"
+            android:layout_marginLeft="15dp"
+            android:background="@color/divider_color" />
+
+        <RelativeLayout
+            android:id="@+id/incomeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buyAndPayDivider"
+            android:background="@drawable/settings_btn_selector" >
+
+            <TextView
+                android:id="@+id/incomeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="收益保障"
+                android:textColor="@color/light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dividerEnd"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/incomeLayout"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

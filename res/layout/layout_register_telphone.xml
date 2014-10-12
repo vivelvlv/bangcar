@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_register_telphone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="验证手机(1/4)"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="14dp"
+        android:background="@null" >
+
+        <EditText
+            android:id="@+id/mobileEt"
+            style="@style/et_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:hint="请输入您的手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#3b3b3b"
+            android:textColorHint="#d2d2d2"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/deleteImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_delete"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/showPhoneCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/deleteImg"
+            android:gravity="center"
+            android:text="手机号码格式不正确"
+            android:textColor="@color/register_red"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verifyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/accountLayout"
+        android:layout_marginTop="9dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/verifyEt"
+            style="@style/et_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#3b3b3b"
+            android:textColorHint="#d2d2d2"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/getCatchaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_send_selector"
+            android:enabled="false"
+            android:text="发送"
+            android:textColor="@null"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/voiceVerifyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/verifyLayout"
+        android:layout_marginTop="11dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/hasSended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:text="验证码已经发送至指定手机"
+            android:textColor="#a8a8a8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/notReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hasSended"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="收不到验证码？"
+            android:textColor="#a8a8a8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/voiceVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hasSended"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/notReceived"
+            android:text="点击语音验证"
+            android:textColor="@color/register_red"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/voiceVerifyLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/reg_btn_red_selector"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

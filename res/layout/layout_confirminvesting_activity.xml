@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+        >
+    <!--top head-->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:id="@+id/topHeadLayout"
+            android:background="@color/title_bg">
+        <TextView
+                android:id="@+id/cancelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:text="确认投资"
+                />
+
+
+        <ImageView android:layout_width="20dp"
+                   android:layout_height="fill_parent"
+                   android:src="@drawable/refresh_buy_icon"
+                   android:layout_marginRight="15dp"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/refreshBuyInfoIv"
+                />
+
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/topHeadLayout"
+                    android:background="@color/white"
+            >
+
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="47dp"
+                  android:text="产品名字"
+                  android:gravity="center_vertical"
+                  android:textSize="15sp"
+                  android:textColor="#3b3b3b"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:id="@+id/productNameTv"
+                />
+        <ImageView android:layout_width="fill_parent"
+                   android:layout_height="0.2dp"
+                   android:layout_below="@+id/productNameTv"
+                   android:src="@drawable/line_in_confirmbuy"
+                   android:id="@+id/divider_line_in_confirmbuy"
+                />
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="47dp"
+                      android:gravity="center_vertical"
+                      android:layout_below="@+id/divider_line_in_confirmbuy"
+                      android:id="@+id/layoutInConfirmActivityToShowLeftCanBuy"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginRight="15dp"
+                >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="剩余可投: "
+                      android:textColor="#919191"
+                      android:textSize="13sp"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="62万元"
+                      android:id="@+id/virtualRemainShareTv"
+                      android:textColor="#f05141"
+                      android:textSize="13sp"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:text="(1万起投)"
+                      android:textColor="#919191"
+                      android:textSize="13sp"
+                      android:id="@+id/minBuyLimitTv"
+                    />
+            <ImageView android:layout_width="12dp"
+                       android:layout_height="12dp"
+                       android:layout_marginLeft="5dp"
+                       android:src="@drawable/help_buy"
+                       android:layout_gravity="center_vertical"
+                    />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="13dp"
+                  android:background="@color/product_list_bg"
+                  android:layout_below="@+id/layoutInConfirmActivityToShowLeftCanBuy"
+                  android:id="@+id/divider_buy_background_color"
+                >
+
+        </TextView>
+        <TextView
+                android:layout_height="0.2dp" android:layout_width="fill_parent"
+                android:background="#cccccc"
+                android:layout_alignBottom="@+id/divider_buy_background_color"
+                />
+        <TextView
+                android:layout_height="0.2dp" android:layout_width="fill_parent"
+                android:background="#cccccc"
+                android:layout_alignTop="@+id/divider_buy_background_color"
+                >
+
+        </TextView>
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="88dp"
+                        android:layout_below="@+id/divider_buy_background_color"
+                        android:id="@+id/expectRateAndWaitInputNumberLayout"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                >
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#3b3b3b"
+                      android:textSize="15sp"
+                      android:layout_marginTop="16dp"
+                      android:id="@+id/expectedRevenueLabel"
+                      android:text="预计到期收益"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="8dp"
+                          android:layout_below="@+id/expectedRevenueLabel"
+                          android:gravity="bottom"
+                    >
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="926"
+                          android:textSize="27sp"
+                          android:textColor="#f05141"
+                          android:id="@+id/expectIncomeTv"
+
+                        />
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="元"
+                          android:textSize="15sp"
+                          android:layout_marginLeft="4dp"
+
+                        />
+            </LinearLayout>
+
+
+            <TextView android:layout_width="76dp"
+                      android:layout_height="32dp"
+                      android:text="收益计算"
+                      android:textSize="13sp"
+                      android:textColor="#f05141"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/calc_income_bt_bg"
+                      android:layout_alignParentRight="true"
+                      android:id="@+id/calcDialogLaunchBt"
+                    />
+        </RelativeLayout>
+
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="0.2dp"
+                  android:layout_below="@+id/expectRateAndWaitInputNumberLayout"
+                  android:background="#cccccc"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:id="@+id/divider_line"
+                />
+
+
+        <EditText android:layout_width="fill_parent"
+                  android:layout_height="52dp"
+                  android:id="@+id/investEt"
+                  android:layout_marginTop="12dp"
+                  android:layout_below="@+id/expectRateAndWaitInputNumberLayout"
+                  android:background="@drawable/input_invest_number"
+                  android:hint="请输入投资金额"
+                  android:textSize="15sp"
+                  android:paddingLeft="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:textColorHint="#c1bdbd"
+                  android:inputType="numberDecimal"
+                  android:textCursorDrawable="@null"
+                />
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="48dp"
+                  android:text="万元"
+                  android:textColor="#3b3b3b"
+                  android:textSize="15sp"
+                  android:gravity="center"
+                  android:layout_alignRight="@+id/investEt"
+                  android:layout_alignTop="@+id/investEt"
+                  android:layout_marginRight="10dp"
+                />
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/product_list_bg"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/tailLayout"
+                        android:layout_below="@id/investEt">
+
+            <Button android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="确认订单"
+                    android:textColor="@color/white"
+                    android:background="@drawable/confirm_order_button_selector"
+                    android:id="@+id/investBt"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:onClick="onClickInvestBt"
+                    />
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="匿名购买"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#787878"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:paddingLeft="8dp"
+                    android:button="@drawable/anonymous_buy_selector"
+                    android:id="@+id/isAnonymousCb" android:layout_below="@+id/investBt" android:checked="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_height="0.2dp" android:layout_width="fill_parent"
+                android:background="#cccccc"
+                android:layout_alignTop="@+id/tailLayout"
+                />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

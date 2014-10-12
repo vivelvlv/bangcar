@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="110dp"
+                android:background="@drawable/buy_dialog_bg" >
+
+    <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal" >
+
+        <ImageView
+                android:id="@+id/reminIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_remain" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/reminIcon"
+                android:gravity="center"
+                android:text="您尚未完成交易信息设定"
+                android:textColor="@color/et_text_color"
+                android:id="@+id/showText"
+                android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/descTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/topLayout"
+            android:gravity="center"
+            android:text="现在就去设置？"
+            android:textColor="@color/product_sub_title_color"
+            android:textSize="14sp" />
+
+    <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@+id/descTv"
+            android:layout_marginTop="20dp"
+            >
+        <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buy_dialog_cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="取消"
+                />
+        <Button
+                android:id="@+id/gotoSetTradeInfoButton"
+                android:layout_width="132dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/cancelButton"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/buy_dialog_sure"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="好"
+                />
+    </RelativeLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/bottomLayout"
+            />
+
+</RelativeLayout>

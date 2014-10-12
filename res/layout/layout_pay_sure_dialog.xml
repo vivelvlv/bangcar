@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:gravity="center"
+    android:background="@drawable/paydialog_bg" >
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="支付确认中"
+        android:textColor="@color/light_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="10dp"
+        android:text="支付结果已提交，请等待10秒"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

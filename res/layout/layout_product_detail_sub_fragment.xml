@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/register_bg"
+        >
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/productBaseInfoLayoutView"
+                      android:background="@color/white"
+                >
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="0.2dp"
+                  android:background="@color/divider_color"
+                  android:layout_below="@+id/productBaseInfoLayoutView"
+                />
+
+
+        <!--listView show list wiew -->
+
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="0.2dp"
+                  android:background="@color/divider_color"
+                  android:layout_alignTop="@+id/productDetailHtmlLinearLayoutView"
+                />
+        <LinearLayout android:layout_width="fill_parent"
+                      android:background="@color/white"
+                      android:layout_below="@+id/productBaseInfoLayoutView"
+                      android:layout_marginTop="10dp"
+                      android:id="@+id/productDetailHtmlLinearLayoutView"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                >
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

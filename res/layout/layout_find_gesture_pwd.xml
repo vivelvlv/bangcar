@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/register_bg" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/accountTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="miao******@noahwm.com"
+        android:textColor="#656565"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/pwdLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/accountTv"
+        android:layout_marginTop="20dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/pwdEt"
+            style="@style/et_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color" />
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/veryftLayout"
+                    android:layout_below="@+id/pwdLayout"
+                    android:layout_width="fill_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+        <EditText
+                android:id="@+id/verifyEt"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/passEt"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="15dp"
+                android:hint="验证码,点击图片刷新"
+                android:background="@drawable/login_et_selector"
+                style="@style/et_style"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="45dp"
+                      android:layout_alignRight="@+id/verifyEt"
+                      android:layout_alignTop="@+id/verifyEt"
+                      android:gravity="center"
+                      android:layout_marginRight="3dp">
+            <TextView
+                    android:id="@+id/showCaptchaCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_grey"
+                    android:text="未注册"
+                    android:visibility="gone"
+                    />
+
+        </LinearLayout>
+        <ImageView
+                android:id="@+id/verifyImg"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/verifyEt"
+                android:layout_toRightOf="@+id/verifyEt"
+                android:layout_marginLeft="5dp"
+                android:layout_alignRight="@+id/passEt"
+                android:background="@color/white"
+                />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/forgetPwdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/veryftLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="忘记登录密码？"
+            android:textColor="#969696"
+            android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/forgetPwdTv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

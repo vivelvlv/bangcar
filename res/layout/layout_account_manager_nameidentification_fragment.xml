@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/register_bg"
+        >
+    <RelativeLayout
+            android:id="@+id/NameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="14dp"
+            android:background="@null" >
+
+        <EditText
+                android:id="@+id/nameEt"
+                style="@style/et_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:hint="请输入真实姓名"
+                android:inputType="textPersonName"
+                android:maxLength="18"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="#3b3b3b"
+                android:textColorHint="#d2d2d2"
+                android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/identityCardLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/NameLayout"
+            android:layout_marginTop="9dp"
+            android:background="@color/white" >
+
+        <EditText
+                android:id="@+id/identityCardEt"
+                style="@style/et_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:hint="请输入身份证号"
+                android:maxLength="25"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="#3b3b3b"
+                android:textColorHint="#d2d2d2"
+                android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/identityCardLayout"
+                  android:layout_marginTop="9dp"
+            >
+
+        <ImageView android:layout_width="17dp"
+                   android:layout_height="17dp"
+                   android:src="@drawable/attention"
+                   android:layout_marginLeft="15dp"
+                   android:id="@+id/attionIcon"
+                />
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="15dp"
+                  android:textSize="15sp"
+                  android:layout_marginLeft="9dp"
+                  android:text="根据监管规定，购买理财产品须进行实名认证，请准确填写您的身份信息，认证成功后将无法修改。"
+                />
+    </LinearLayout>
+
+
+</RelativeLayout>

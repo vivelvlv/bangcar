@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/postMsgTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="闲钱终于有个去处了"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+    <RelativeLayout 
+        android:id="@+id/timeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postMsgTv"
+        android:layout_marginTop="15dp"
+        >
+        <TextView 
+            android:id="@+id/floorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/workmate_name_color"
+            android:text="# 1"
+            />
+        <TextView 
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/floorTv"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/workmate_name_color"
+            android:text="andy"
+            />
+        <TextView 
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nameTv"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/workmate_name_color"
+            android:text="30分钟前"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/timeLayout" />
+
+</RelativeLayout>

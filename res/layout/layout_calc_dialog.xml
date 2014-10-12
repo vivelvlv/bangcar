@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="307dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_height="203dp">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="44dp"
+              android:text="收益计算"
+              android:gravity="center"
+              android:background="#e8e8e8"
+              android:textColor="#3b3b3b"
+              android:textSize="15sp"
+              android:id="@+id/header"
+            />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignRight="@+id/header"
+               android:src="@drawable/close_bt_calc_dialog"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="10dp"
+               android:id="@+id/closeImg"
+            />
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="58dp"
+                  android:layout_below="@+id/header"
+                  android:gravity="center_vertical"
+                  android:id="@+id/contentLayout"
+            >
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="预计到期收益"
+                      android:id="@+id/expectIncomeLabel"
+                      android:textSize="10sp"
+                      android:textColor="#3b3b3b"
+                      android:layout_marginLeft="15dp"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="#f05141"
+                      android:textSize="17dp"
+                      android:text="926.00"
+                      android:layout_marginLeft="3dp"
+                      android:id="@+id/expectIncomeTv"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="元"
+                      android:textSize="10sp"
+                      android:textColor="#3b3b3b"
+                      android:layout_marginLeft="3dp"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="(以实际到账为准)"
+                      android:textSize="9sp"
+                      android:textColor="#919191"
+                    />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="0.2dp"
+              android:background="#c4c4c4"
+              android:layout_below="@+id/contentLayout"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="15dp"
+            />
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="100dp"
+                  android:layout_below="@+id/contentLayout"
+                  android:gravity="center"
+                  android:orientation="vertical"
+            >
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                >
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="="
+                          android:textColor="#3b3b3b"
+                          android:textSize="17sp"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="50000"
+                          android:textColor="#3b3b3b"
+                          android:textSize="17sp"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                          android:id="@+id/investAmountTv"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="*"
+                          android:textColor="#3b3b3b"
+                          android:textSize="17sp"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="6.5%"
+                          android:textColor="#3b3b3b"
+                          android:textSize="17sp"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                          android:id="@+id/expectRateTv"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="*"
+                          android:textColor="#3b3b3b"
+                          android:textSize="17sp"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="104/365"
+                          android:textColor="#3b3b3b"
+                          android:textSize="17sp"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                          android:id="@+id/investDaysTv"
+                        />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_marginTop="6dp"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="投资金额"
+                          android:textColor="#919191"
+                          android:textSize="8sp"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                        />
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="年华收益率"
+                          android:textColor="#919191"
+                          android:textSize="8sp"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                          android:id="@+id/expectRateLabel"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="计息天数*"
+                          android:textColor="#919191"
+                          android:textSize="8sp"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                        />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginRight="15dp"
+                >
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="*计息天数(104天)"
+                      android:textColor="#919191"
+                      android:textSize="8sp"
+                      android:layout_weight="2"
+                      android:gravity="center"
+                      android:id="@+id/calcDaysTv"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="="
+                      android:textColor="#919191"
+                      android:textSize="8sp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="到期日(2014/11/21)"
+                      android:textColor="#919191"
+                      android:textSize="8sp"
+                      android:layout_weight="2"
+                      android:gravity="center"
+                      android:id="@+id/endTimeDayTv"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="-"
+                      android:textColor="#919191"
+                      android:textSize="8sp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="起息日(2014/8/9)"
+                      android:textColor="#919191"
+                      android:textSize="8sp"
+                      android:layout_weight="2"
+                      android:gravity="center"
+                      android:id="@+id/beginTimeDayTv"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

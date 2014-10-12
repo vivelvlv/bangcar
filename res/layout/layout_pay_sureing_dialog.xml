@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:gravity="center"
+    android:background="@drawable/paydialog_bg" >
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="支付确认中"
+        android:textColor="@color/light_black"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/errMsgTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="后台正在处理,请在我的投资模块中查看支付结果"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+    <TextView 
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/errMsgTv"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_grey"
+        />
+	<LinearLayout 
+	    android:id="@+id/bottomLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:layout_below="@+id/divider"
+	    >
+	    <TextView 
+	        android:id="@+id/sureTv"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1.0"
+	        android:textSize="16sp"
+	        android:textColor="@color/light_blue"
+	        android:text="去查看"
+	        android:gravity="center"
+	        />
+	</LinearLayout>
+</RelativeLayout>

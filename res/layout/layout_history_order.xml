@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/invest_bg" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title" />
+
+    <ListView 
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titleLayout"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:cacheColorHint="@color/transpant"
+        android:background="@color/transpant"
+        android:scrollbarStyle="outsideOverlay"
+        android:listSelector="@android:color/transparent" 
+        />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tv_wait_pb_bg"
+        android:visibility="visible" />
+    
+</RelativeLayout>

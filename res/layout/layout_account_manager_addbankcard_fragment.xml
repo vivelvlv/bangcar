@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/NameLayout"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginTop="10dp"
+            >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="姓名"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="用户名"
+                  android:layout_marginLeft="10dp"
+                  android:id="@+id/nameTv"
+                />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/NameLayout"
+                  android:id="@+id/IdentityLayout"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+            >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="身份证"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="321********0915"
+                  android:layout_marginLeft="10dp"
+                  android:id="@+id/identityCardTv"
+                />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ChooseBankLayout"
+                  android:layout_below="@+id/IdentityLayout"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+            >
+        <Spinner android:id="@+id/chooseBankSp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:entries="@array/planets_arry"
+                ></Spinner>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ChooseCityLayout"
+                  android:layout_below="@+id/ChooseBankLayout"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+            >
+        <Spinner android:id="@+id/chooseProvinceSp"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"/>
+        <Spinner android:id="@+id/chooseCitySp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                />
+    </LinearLayout>
+
+
+    <EditText
+            android:id="@+id/bankCardIdEt"
+            style="@style/et_style"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:hint="请输入银行卡号"
+            android:maxLength="25"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="#3b3b3b"
+            android:textColorHint="#d2d2d2"
+            android:textSize="16sp"
+            android:layout_below="@+id/ChooseCityLayout"
+            />
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/bankCardIdEt"
+                  android:layout_marginTop="9dp"
+                  android:id="@+id/HintLabelLayout"
+            >
+
+        <ImageView android:layout_width="17dp"
+                   android:layout_height="17dp"
+                   android:src="@drawable/attention"
+                   android:layout_marginLeft="15dp"
+                   android:id="@+id/attionIcon"
+                />
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="15dp"
+                  android:textSize="15sp"
+                  android:layout_marginLeft="9dp"
+                  android:text="您的银行卡将会受到员工宝为您准备的绑卡红包,以完成绑卡验证。请仔细核实银行卡号,绑定后将无法更改。"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/HintLabelLayout"
+                  android:layout_marginTop="12dp"
+            >
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已阅读并同意"
+                android:textColor="#787878"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="8dp"
+                android:button="@drawable/anonymous_buy_selector"
+                android:id="@+id/isAgreeCb" android:layout_below="@+id/HintLabelLayout" android:checked="true"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:textSize="15sp"
+                  android:text="《用户委托支付协议》"
+                  android:textColor="#f05141"
+                  android:id="@+id/userAgreePayProtocalBt"
+                />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

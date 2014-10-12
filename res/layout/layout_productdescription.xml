@@ -1,0 +1,476 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/register_bg" >
+
+    <include
+            android:id="@+id/titleLayout"
+            layout="@layout/layout_title" />
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/titleLayout" >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                    android:id="@+id/base_info_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white" >
+
+                <TextView
+                        android:id="@+id/aboutTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="产品名称"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="方舟-万家共赢"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                         />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/base_info_code"
+                    android:layout_below="@id/base_info_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                     >
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="产品代码"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="100025"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/base_info_rate"
+                    android:layout_below="@id/base_info_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="预期年华收益率"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="8.0%"
+                        android:gravity="center|left"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="170dp"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/base_info_all"
+                    android:layout_below="@id/base_info_rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+
+                    >
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="产品总额"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="500万"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_begincalcday"
+                    android:layout_below="@id/base_info_all"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+
+                    >
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="起息日期"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="购买成功后的第二天"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/base_info_endday"
+                    android:layout_below="@id/base_info_begincalcday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    >
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="预期到期日"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="2015-01-15"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/base_info_howtopay"
+                    android:layout_below="@id/base_info_endday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="收益分配方式"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="到期一次性对付"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_earlytermination"
+                    android:layout_below="@id/base_info_howtopay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="是否可提前结束"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="该产品可能提前到期"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_companyname"
+                    android:layout_below="@id/base_info_earlytermination"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="融资方名称"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="南京升龙置业有限公司"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_projectname"
+                    android:layout_below="@id/base_info_companyname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="项目名称"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="升龙集团南京河西奥南项目开发"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_projectaddr"
+                    android:layout_below="@id/base_info_projectname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="项目名称"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="升龙集团南京河西奥南项目开发"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_moneyusefor"
+                    android:layout_below="@id/base_info_projectaddr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="项目资金用途"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="用于南京河西奥南项目开发"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_revertMoney"
+                    android:layout_below="@id/base_info_moneyusefor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="还款来源"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="项目销售回款"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/base_info_beginsellday"
+                    android:layout_below="@id/base_info_revertMoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="开始购买日"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="2014-07-08"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/base_info_oversellday"
+                    android:layout_below="@id/base_info_beginsellday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="15dp"
+                        android:text="结束购买日"
+                        android:textColor="@color/light_black"
+                        android:textSize="18sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="2014-07-08"
+                        android:textSize="18sp"
+                        android:textColor="#646464"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

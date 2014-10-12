@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.bangcar.app.customview.CustomListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transpant"
+        android:divider="@color/divider_color"
+        android:dividerHeight="0.5dp" />
+
+    <RelativeLayout
+        android:id="@+id/replyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:background="@drawable/workmate_say_bottom_bg" >
+
+        <EditText
+            android:id="@+id/replyEt"
+            style="@style/et_style"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:hint="说两句..."
+            android:background="@drawable/login_et_selector"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:id="@+id/sendTv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/workmate_send"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

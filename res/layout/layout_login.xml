@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitXY" />
+
+    <EditText
+        android:id="@+id/accountEt"
+        style="@style/et_style"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_et_selector"
+        android:hint="请输入手机号码"
+        android:inputType="phone"
+        android:paddingLeft="35dp"
+        android:textCursorDrawable="@null" />
+
+    <ImageView
+        android:id="@+id/accountImg"
+        android:layout_width="16.9dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/accountEt"
+        android:layout_alignTop="@+id/accountEt"
+        android:layout_marginBottom="12.5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12.5dp"
+        android:background="@drawable/icon_account"
+        android:scaleType="center" />
+
+    <EditText
+        android:id="@+id/passEt"
+        style="@style/et_style"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignRight="@+id/accountEt"
+        android:layout_below="@+id/accountEt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_et_selector"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="35dp"
+        android:textCursorDrawable="@null" />
+
+    <ImageView
+        android:id="@+id/passImg"
+        android:layout_width="16.9dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/passEt"
+        android:layout_alignTop="@+id/passEt"
+        android:layout_marginBottom="12.5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12.5dp"
+        android:background="@drawable/icon_pwd"
+        android:scaleType="center" />
+
+    <EditText
+        android:id="@+id/verifyEt"
+        style="@style/et_style"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/passEt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_et_selector"
+        android:hint="点击验证码可刷新"
+        android:paddingLeft="35dp"
+        android:textCursorDrawable="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/verifyIcon"
+        android:layout_width="16.9dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/verifyEt"
+        android:layout_alignTop="@+id/verifyEt"
+        android:layout_marginBottom="12.5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12.5dp"
+        android:background="@drawable/icon_verify"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/verifyImg"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_alignRight="@+id/passEt"
+        android:layout_alignTop="@+id/verifyEt"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/verifyEt"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/verifyEt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_selector"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/registerTv"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="免费注册"
+            android:textColor="@color/login_btn_normal_color"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/login_btn_normal_color"
+            android:layout_toRightOf="@+id/registerTv"
+            />
+        
+        <TextView
+            android:id="@+id/forgetPassTv"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/divider"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/login_btn_normal_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

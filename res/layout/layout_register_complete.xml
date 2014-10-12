@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_register_complete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@+id/changeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="更换邮箱"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="完成注册(4/4)"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_completed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:scaleType="center"
+        android:src="@drawable/register_completed" />
+
+    <RelativeLayout
+        android:id="@+id/verifyTip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/icon_completed"
+        android:layout_marginTop="10dp" 
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/verifyText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请前往"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/verifyText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/verifyText1"
+            android:textColor="@color/register_red"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/verifyText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/verifyText2"
+            android:text="完成邮箱验证"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/completeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/verifyTip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/reg_btn_red_selector"
+        android:text="开始理财"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sendAgain"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/completeButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/reg_btn_gray_selector"
+        android:text="重新发送"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

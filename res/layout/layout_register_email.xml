@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_register_email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="验证公司邮箱(3/4)"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mailLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="14dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/emailEt"
+            style="@style/et_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="请输入您的公司邮箱"
+            android:textColor="#3b3b3b"
+            android:textColorHint="#d2d2d2"
+             android:textSize="16sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/deleteImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_delete"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mailEtDaviderTop"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/mailEtDavider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emailTip"
+        android:layout_below="@+id/mailLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="完成公司邮箱验证，即刻加入员工宝公司理财专区，和同事一起享受便捷理财服务。"
+        android:textColor="#a8a8a8"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailTip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/reg_btn_red_selector"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

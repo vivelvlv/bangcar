@@ -1,0 +1,21 @@
+<resources>
+	<dimen name="title_height">45dp</dimen>
+    <dimen name="officemate_buyer">18sp</dimen>
+    <dimen name="more_pop_width">80dp</dimen>
+    <dimen name="more_pop_height">100dp</dimen>
+    <dimen name="float_income_size">20sp</dimen>
+    <dimen name="fix_income_size">24sp</dimen>
+    <dimen name="product_detail_html_list_margins_to_side">15dp</dimen>
+    <dimen name="product_detail_html_list_height">5dp</dimen>
+    <dimen name="product_detail_html_list_divder_height">1dp</dimen>
+    <dimen name="product_detail_choosed_item_font_size">17sp</dimen>
+    <dimen name="product_detail_base_info_marginleft">15dp</dimen>
+    <dimen name="product_detail_base_info_margintop">15dp</dimen>
+    <dimen name="product_detail_base_info_first_margintop">18dp</dimen>
+    <dimen name="product_detail_base_info_last_margintail">18dp</dimen>
+    <dimen name="product_detail_base_info_marginright">15dp</dimen>
+    <dimen name="product_detail_base_info_textsize">14sp</dimen>
+    <dimen name="product_detail_base_info_marginbottom">10dp</dimen>
+    <dimen name="product_detail_base_info_title_minilength">100dp</dimen>
+    <dimen name="gesture_circle_width">63.3dp</dimen>
+</resources>

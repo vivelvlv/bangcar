@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/titleLayout"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/investAmountTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="在投本金(元)"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/amountTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/investAmountTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2000"
+            android:textColor="@color/text_red_color"
+            android:textSize="46sp" />
+
+        <TextView
+            android:id="@+id/incomeTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountTv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="预计待收收益:1790(不含浮动收益,以实际到账为准)"
+            android:textColor="#afafaf"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recentOrderLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/topLayout"
+        android:background="@drawable/myinvest_expire_bg" >
+
+        <TextView
+            android:id="@+id/remainTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:text="离最近产品到期还剩(天)"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dayTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remainTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="20"
+            android:textColor="#849496"
+            android:textSize="46sp" />
+
+        <TextView
+            android:id="@+id/expireTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dayTv"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="预计2014-11-11到期,交易金额1万元"
+            android:textColor="#afafaf"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <!--top head-->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:id="@+id/topHeadLayout"
+            android:background="@color/title_bg">
+        <TextView
+                android:id="@+id/cancelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:text="账户安全"
+                />
+        <TextView
+                android:id="@+id/operateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="下一步"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/fragmentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/topHeadLayout"
+            >
+
+        <fragment
+                android:id="@+id/NameIdentificationFragmentId"
+                android:name="com.bangcar.app.fragment.AccountSafeManager.NameIdentificationFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_account_manager_nameidentification_fragment"
+                />
+        <fragment
+                android:id="@+id/AddBankCardFragmentId"
+                android:name="com.bangcar.app.fragment.AccountSafeManager.AddBankCardFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_account_manager_addbankcard_fragment"/>
+
+        <fragment
+                android:id="@+id/BankVerificationFragmentId"
+                android:name="com.bangcar.app.fragment.AccountSafeManager.BankVerificationFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_account_manager_bankverification_fragment"/>
+        <fragment
+                android:id="@+id/SettingTradePasswordFragmentId"
+                android:name="com.bangcar.app.fragment.AccountSafeManager.SettingTradePasswordFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_account_manager_settingtradepassword_fragment"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

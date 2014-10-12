@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/invest_bg" >
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/unpayNoticeTv"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/titleLayout"
+        android:background="#88000000"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/unpayNoticeTv"
+        android:background="@color/transpant"
+        android:cacheColorHint="@color/transpant"
+        android:divider="@null"
+        android:dividerHeight="13dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <RelativeLayout
+        android:id="@+id/noInvestLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/unpayNoticeTv"
+        android:visibility="gone"
+        android:background="@color/white" >
+        <TextView
+            android:id="@+id/ninvestAmountTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="在投本金(元)"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ninvestAmountTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="暂无投资"
+            android:textColor="@color/text_red_color"
+            android:textSize="46sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="13dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/invest_no_order_divider"
+            />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/cropInfoTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noInvestLayout"
+        android:layout_marginTop="55dp"
+        android:textSize="15sp"
+        android:textColor="#a9a9a9"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

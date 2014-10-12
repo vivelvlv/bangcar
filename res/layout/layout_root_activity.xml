@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/register_bg">
+    <FrameLayout
+            android:id="@+id/fragmentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/titleLayout"
+            android:layout_above="@+id/RootMenuLayout">
+
+        <fragment
+                android:id="@+id/TeacherListFragment"
+                android:name="com.bangcar.app.fragment.RootFragment.TeacherListFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_root_activity_teacherlistfragment"/>
+        <fragment
+                android:id="@+id/InvestFragment"
+                android:name="com.bangcar.app.fragment.RootFragment.InvestFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_root_activity_investfragment"/>
+
+        <fragment
+                android:id="@+id/SettingsFragment"
+                android:name="com.bangcar.app.fragment.RootFragment.SettingsFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:layout="@layout/layout_root_activity_settingsfragment"/>
+    </FrameLayout>
+
+
+
+    
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="0.2dp"
+              android:background="#b2b2b2"
+              android:layout_above="@+id/RootMenuLayout"
+            />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:id="@+id/RootMenuLayout"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/ProductListFragment_button"
+                      android:orientation="vertical"
+                >
+
+            <ImageView android:layout_width="40dp"
+                       android:layout_height="33dp"
+                       android:src="@drawable/product_choose"
+                       android:id="@+id/productListImageView"
+                    />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="师傅列表"
+                      android:textSize="11sp"
+                      android:id="@+id/productListMenuTv"
+                      android:textColor="@color/menu_choose"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/InvestFragment_button"
+                      android:orientation="vertical"
+                >
+            <ImageView android:layout_width="40dp"
+                       android:layout_height="33dp"
+                       android:src="@drawable/myinvest_unchoose"
+                       android:id="@+id/myInvestMenuImageView"
+
+                    />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我的记录"
+                      android:textSize="11sp"
+                      android:id="@+id/myInvestMenuTv"
+                      android:textColor="@color/menu_unchoose"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:id="@+id/SettingsFragment_button"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                >
+            <ImageView android:layout_width="40dp"
+                       android:layout_height="33dp"
+                       android:src="@drawable/settings_unchoose"
+                    />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="设置"
+                      android:textSize="11sp"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

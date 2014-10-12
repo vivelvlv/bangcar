@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="locSDK_3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/locSDK_3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/BaiduLBS_Android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

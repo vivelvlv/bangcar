@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/white"
+        android:minHeight="110dp" >
+
+        <TextView
+            android:id="@+id/productNameTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:text="产品名称"
+            android:textColor="@color/light_black"
+            android:textSize="15sp" />
+
+        <LinearLayout 
+            android:id="@+id/infoLayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productNameTv"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            >
+            
+        </LinearLayout>
+        
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#BCC9CF"
+            android:gravity="center"
+            android:text="等待确认"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/infoLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/statusTv" >
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/expireTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="2014-09-24"
+                android:textColor="@color/light_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/expire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expireTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="到期日期"
+                android:textColor="@color/sub_title_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
